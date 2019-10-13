@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--Executing the uiTest cases in parallel with max thread count of 3-->
+<suite name="FromAtoB Test Suite" parallel="classes" thread-count="10">
+    <test name="FromAtoB UI tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="os" value="mac"/>
+        <classes>
+            <class name="com.fromatob.uiTest.BookTrainTicketTest"/>
+        </classes>
+    </test>
+</suite>

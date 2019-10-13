@@ -1,0 +1,9 @@
+*.iml
+## Directory-based project format:
+.idea/
+.allure*
+# User-specific stuff:
+/target/
+
+
+
